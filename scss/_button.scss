@@ -1,0 +1,60 @@
+$primary: #011B22;
+$border-color: #011B22;
+$box-shadow:0 0 0 .25rem rgba(1, 27, 34, .8);
+$hover-color:#fff;
+
+
+.btn {
+  border-radius: 1.2rem;
+  padding: .4rem 2rem;
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: $primary !important;
+  border-color: $border-color !important;
+  transition: .7s;
+
+  &:hover {
+    color: #fff;
+    background-color: $hover-color !important;
+    border-color: $border-color !important;
+    color: $primary;
+    transition: .7s;
+  }
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: $primary !important;
+  border-color: $border-color !important;
+  box-shadow: $box-shadow !important;
+}
+
+.btn-check:active+.btn-primary,
+.btn-check:checked+.btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: $primary !important;
+  border-color: $border-color !important;
+}
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: $box-shadow !important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: $primary !important;
+  border-color: $border-color !important;
+  cursor: pointer;
+}

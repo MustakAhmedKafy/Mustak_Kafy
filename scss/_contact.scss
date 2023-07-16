@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Lato:ital,wght@1,300&family=Lobster&display=swap');
+
+.contact-me {
+  background-color: #F5F5F5;
+}
+
+$primary: #011B22;
+$border-color: #011B22;
+$box-shadow:0 0 0 .15rem rgba(1, 27, 34, .8);
+$background-color:#E6E6E6;
+
+
+.input-field .form-control {
+  padding-top: 18px;
+  padding-bottom: 22px;
+  background-color: $background-color;
+  border: 0px;
+  border-radius: 50px !important;
+  height: 2rem;
+  padding-left: 1.5rem;
+
+  &:focus {
+    border-color: $border-color;
+    box-shadow: $box-shadow;
+  }
+}
+
+.message .form-control {
+  padding: .5rem .1rem;
+  background-color: $background-color;
+  border: 0px;
+  border-radius: 5px !important;
+  padding-left: 1.5rem;
+
+  &:focus {
+    // background-color: #fff !important;
+    border-color: $border-color;
+    box-shadow: $box-shadow;
+
+  }
+}
+
+.form-control::placeholder {
+  font-family: 'Alegreya Sans',
+    sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-me h3 {
+  font-size: 20px;
+  color: #666;
+}
